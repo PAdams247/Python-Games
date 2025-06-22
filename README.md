@@ -31,11 +31,6 @@ A collection of fun and interactive Python games perfect for beginners and enter
   - Score tracking
 - **Special Rules:** Bomb beats Rock and Paper, Scissors defuses Bomb
 
-#### Advanced Version
-**File:** `RockPaperScissors`
-- **Description:** Enhanced version with more features and better game flow
-- **Features:** Same as simple version but with improved user experience
-
 #### Pro Gaming Version
 **File:** `RockPaperScissorsBomb_ProGaming.py`
 - **Description:** The most advanced version with comprehensive features
