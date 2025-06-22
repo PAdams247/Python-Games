@@ -1,0 +1,36 @@
+import random
+
+# List of "Never Have I Ever" statements
+statements = [
+    "Never have I ever traveled to another country.",
+    "Never have I ever eaten sushi.",
+    "Never have I ever gone scuba diving.",
+    "Never have I ever sung karaoke in public.",
+    "Never have I ever stayed up all night playing video games.",
+    "Never have I ever gone skinny dipping.",
+    "Never have I ever bungee jumped.",
+    "Never have I ever ridden a horse.",
+]
+
+def main():
+    print("Welcome to Never Have I Ever!")
+
+    while True:
+        input("Press Enter for a new statement (or 'quit' to exit): ")
+        
+        choice = random.choice(statements)
+        print("\nStatement: ", choice)
+
+        response = input("Have you ever done this? (yes/no): ").strip().lower()
+
+        if response == 'quit':
+            break
+        elif response == 'yes':
+            print("It's your turn to share a statement!")
+            new_statement = input("Type your 'Never Have I Ever' statement: ")
+            statements.append(new_statement)
+        elif response != 'no':
+            print("Invalid response. Please enter 'yes', 'no', or 'quit'.")
+
+if __name__ == "__main__":
+    main()

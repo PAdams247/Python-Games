@@ -1,0 +1,36 @@
+import random
+
+# List of truth and dare questions
+truth_questions = [
+    "What's the most embarrassing thing that has ever happened to you?",
+    "Have you ever cheated on a test?",
+    "What is your biggest fear?",
+    "What is your guilty pleasure?",
+]
+
+dare_tasks = [
+    "Sing a song out loud.",
+    "Call a random contact from your phone and say 'I love you.'",
+    "Do 10 push-ups.",
+    "Text your crush 'I like you' and see their response.",
+]
+
+def main():
+    print("Welcome to Truth or Dare!")
+    
+    while True:
+        choice = input("Choose 'truth' or 'dare', or type 'quit' to exit: ").lower()
+        
+        if choice == 'quit':
+            break
+        elif choice == 'truth':
+            truth_question = random.choice(truth_questions)
+            print("Truth Question: ", truth_question)
+        elif choice == 'dare':
+            dare_task = random.choice(dare_tasks)
+            print("Dare Task: ", dare_task)
+        else:
+            print("Invalid choice. Please choose 'truth' or 'dare'.")
+
+if __name__ == "__main__":
+    main()
